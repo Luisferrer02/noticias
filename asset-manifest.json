@@ -1,16 +1,37 @@
 {
   "files": {
-    "main.css": "/noticias/static/css/main.f855e6bc.css",
-    "main.js": "/noticias/static/js/main.60bedb9f.js",
+    "main.css": "/noticias/static/css/main.a3913a7d.css",
+    "main.js": "/noticias/static/js/main.43761478.js",
     "static/js/453.edd34506.chunk.js": "/noticias/static/js/453.edd34506.chunk.js",
-    "static/media/logo.svg": "/noticias/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Analisis_Mouthwashing_Portada.jpg": "/noticias/static/media/Analisis_Mouthwashing_Portada.c32987624cd0f68dde86.jpg",
+    "static/media/Analisis_Hades2_Portada.jpg": "/noticias/static/media/Analisis_Hades2_Portada.3eecbc2efd836d73c205.jpg",
+    "static/media/main-bo66.jpg": "/noticias/static/media/main-bo66.07759c13f4c63c552958.jpg",
+    "static/media/r6.avif": "/noticias/static/media/r6.fd9e5d5230bc966894b5.avif",
+    "static/media/red2.jpeg": "/noticias/static/media/red2.bb8483b76bfaf0cb5f33.jpeg",
+    "static/media/sc.jpeg": "/noticias/static/media/sc.ec3967e5c7d4d24d54af.jpeg",
+    "static/media/steam-dek.jpeg": "/noticias/static/media/steam-dek.8776d993687ddea9d83d.jpeg",
+    "static/media/Analisis_DeathNote_Portada.jpg": "/noticias/static/media/Analisis_DeathNote_Portada.fcfc047fc721e9135b3d.jpg",
+    "static/media/animetrump-raises-fist-after-shooting.jpg": "/noticias/static/media/animetrump-raises-fist-after-shooting.6fbc6cdc230ec9846dd7.jpg",
+    "static/media/trivia_trump.jpeg": "/noticias/static/media/trivia_trump.107b5783cee8cb969f06.jpeg",
+    "static/media/The_Oregon_Trail.jpeg": "/noticias/static/media/The_Oregon_Trail.cb8649f4c74c282355c9.jpeg",
+    "static/media/barracuda.jpg": "/noticias/static/media/barracuda.0a357456d15bf00f14e4.jpg",
+    "static/media/42zardfyztqd1.jpeg": "/noticias/static/media/42zardfyztqd1.1e0d23eda989320dd201.jpeg",
+    "static/media/dragon.jpeg": "/noticias/static/media/dragon.03d1973ff090bf4bcabb.jpeg",
+    "static/media/main-baner1.jpg": "/noticias/static/media/main-baner1.86de9845bff389b24e17.jpg",
+    "static/media/serie5000.jpg": "/noticias/static/media/serie5000.4587d8ff355b8fde7a23.jpg",
+    "static/media/Analisis_Omori_Portada.jpg": "/noticias/static/media/Analisis_Omori_Portada.6abddb52b6971db22891.jpg",
+    "static/media/_BR-6_AC_SX720_FMjpg_.jpg": "/noticias/static/media/c1bb5f6f4a814f2ce4b46b9ebcbf57c649f87b2b06b115b0148e1fbf5dbbdf6a._BR-6_AC_SX720_FMjpg_.f645e5bc358615dfd85d.jpg",
+    "static/media/trivia_rey.jpeg": "/noticias/static/media/trivia_rey.ebb61f794bfcafa0ed09.jpeg",
+    "static/media/Analisis_Journey_Portada.jpg": "/noticias/static/media/Analisis_Journey_Portada.d9f2b52007a89e3c9729.jpg",
+    "static/media/trivia-background.jpg": "/noticias/static/media/trivia-background.dce33ba8677067445d82.jpg",
+    "static/media/gow.jpg": "/noticias/static/media/gow.a37923385ed6f81a2314.jpg",
     "index.html": "/noticias/index.html",
-    "main.f855e6bc.css.map": "/noticias/static/css/main.f855e6bc.css.map",
-    "main.60bedb9f.js.map": "/noticias/static/js/main.60bedb9f.js.map",
+    "main.a3913a7d.css.map": "/noticias/static/css/main.a3913a7d.css.map",
+    "main.43761478.js.map": "/noticias/static/js/main.43761478.js.map",
     "453.edd34506.chunk.js.map": "/noticias/static/js/453.edd34506.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.60bedb9f.js"
+    "static/css/main.a3913a7d.css",
+    "static/js/main.43761478.js"
   ]
 }
