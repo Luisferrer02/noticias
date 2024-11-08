@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Analisis from './componentes/analisis';
+import GuiasYTrucos from './componentes/guiasYTrucos';
+import Main from './componentes/main';
+import Trivia from './componentes/trivia';
+import Series from './componentes/Series'; // Importar el componente Series
 
 function App() {
+  const [pantalla, setPantalla] = useState('main');  // Controla la pantalla actual
+
+  const renderizarPantalla = () => {
+    switch (pantalla) {
+      case 'main':
+        return <Main irAGuias={() => setPantalla('guias')} irAAnalisis={() => setPantalla('analisis')} irATrivia={() => setPantalla('trivia')} irASeries={() => setPantalla('series')} />;
+      case 'guias':
+        return <GuiasYTrucos volver={() => setPantalla('main')} />;
+      case 'analisis':
+        return <Analisis volver={() => setPantalla('main')} />;
+      case 'trivia':
+        return <Trivia volver={() => setPantalla('main')} />;
+      case 'series': // Añadir el caso para Series
+        return <Series volver={() => setPantalla('main')} />;
+      default:
+        return <Main irAGuias={() => setPantalla('guias')} irAAnalisis={() => setPantalla('analisis')} irATrivia={() => setPantalla('trivia')} irASeries={() => setPantalla('series')} />;
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {renderizarPantalla()}
     </div>
   );
 }

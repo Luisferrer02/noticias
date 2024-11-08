@@ -36,3 +36,428 @@
     transform: rotate(360deg);
   }
 }
+
+#main-paginas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(185, 184, 117, 0.8);
+  margin-top: 14px;
+  border-radius: 0%;
+  border: 2px solid #61dafb; 
+  width: 100%;
+  padding: 10px; 
+  box-sizing: border-box;
+  height: 30px; 
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente los elementos */
+  background-color: rgba(185, 184, 117, 0.8);
+  gap: 10px; /* Reducido de 3pc para mejor ajuste */
+  min-height: 60px; /* Cambiado de height fijo a min-height */
+  margin-right: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.botones button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Reducido el padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; /* Reducido el tamaño de fuente */
+  cursor: pointer;
+  max-width: 100%;
+  height: auto; /* Permite que la altura se ajuste al contenido */
+  box-sizing: border-box;
+}
+
+.botones button:hover {
+  background-color: #45a049;
+}
+
+
+#main-logo {
+  justify-content: center;
+  background-image: url('./recursos/main-baner1.jpg');
+  transform: scale(1.1);
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+}
+
+#noticias-destacadas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #282c34;
+  margin-top: -150px;
+}
+
+#main-noticiaDestacada1,
+#main-noticiaDestacada2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  transform: scale(0.7);
+  height: fit-content;
+  height: 55pc; /* Reduced height */
+  font-size: 2em;
+  color: white;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 100px; /* Increased margin-top to lower the elements by 30pc */
+  padding-top: 0;
+  margin-right: -20px;
+  
+  
+}
+
+#main-noticiaDestacada1 {
+  background-image: url('./recursos/barracuda.jpg');  
+}
+
+#main-noticiaDestacada2 {
+  background-image: url('./recursos/serie5000.jpg');
+}
+
+
+
+#noticias-recientes {
+  display: flex;
+  flex-wrap: nowrap; /* Changed from wrap to nowrap */
+  justify-content: center;
+  background-color: #444; /* Cambiado a un color más oscuro para mayor visibilidad */
+  margin-top: -250px;
+  padding: 20px; /* Added padding to ensure content doesn't touch the edges */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+
+#main-noticiaReciente1,
+#main-noticiaReciente2,
+#main-noticiaReciente3 {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align items to the top */
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  transform: scale(0.7);
+  height: fit-content;
+  height: 50pc;
+  font-size: 2em;
+  color: white;
+  width: 33.33%; /* Fit three items in one line */
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 20px; /* Added padding to the top */
+  margin-right: 0; /* Adjusted margin to 0 */
+  padding-bottom: 0; /* Removed padding from the bottom */
+}
+
+#main-noticiaReciente1 {
+  background-image: url('./recursos/main-bo66.jpg');
+}
+
+#main-noticiaReciente2 {
+  background-image: url('./recursos/steam-dek.jpeg');
+}
+
+#main-noticiaReciente3 {
+  background-image: url('./recursos/sc.jpeg');
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+#analisis-cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #282c34;
+  margin-top: 14px;
+  border-radius: 0%;
+  width: 100%;
+  padding: 10px; 
+  box-sizing: border-box;
+  height: fit-content; 
+}
+
+
+
+#analisis-titulo {
+  color: aliceblue;
+  font-size: 4em;
+  letter-spacing: 0.2em;
+  margin: 5px;
+}
+
+#an-articulos-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  background-color: #282c34;
+  margin-top: -30px;
+}
+
+.analisis-articulo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  transform: scale(0.8);
+  height: 24pc; 
+  font-size: 2em;
+  width: 70%;
+  box-sizing: border-box;
+  text-align: left;
+  /*margin-top: 80px;  Increased margin-top to lower the elements by 30pc */
+  padding-top: 0;
+  margin-right: -20px;
+  margin-left: 5%;
+  background-color: rgba(14, 16, 18, 0.52);
+  
+}
+
+.an-art-foto {
+  height: 90%;
+  width: 50%;
+  align-self: center;
+  margin-left: 2%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#an-art-foto-omori {
+  background-image: url('./recursos/Analisis_Omori_Portada.jpg');
+}
+
+#an-art-foto-journey {
+  background-image: url('./recursos/Analisis_Journey_Portada.jpg');
+}
+
+#an-art-foto-mouthwashing {
+  background-image: url('./recursos/Analisis_Mouthwashing_Portada.jpg');
+}
+
+#an-art-foto-deathnote {
+  background-image: url('./recursos/Analisis_DeathNote_Portada.jpg');
+}
+
+#an-art-foto-hades2 {
+  background-image: url('./recursos/Analisis_Hades2_Portada.jpg');
+}
+
+.an-art-titulo {
+  height: 100%;
+  height: 20pc; /* Reduced height */
+  width: 40%;
+  margin-top: 0%;
+  padding: 2%;
+
+  font-size: 1.3em;
+  color: white;
+}
+
+#guias-cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #282c34;
+  margin-top: 14px;
+  border-radius: 0%;
+  width: 100%;
+  padding: 10px; 
+  box-sizing: border-box;
+  height: fit-content; 
+}
+
+
+#guias-titulo {
+  color: aliceblue;
+  font-size: 220%;
+  letter-spacing: 0.5em;
+  margin: 5px;
+}
+#articulos-destacados-lista, #articulos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; /* Aumenta el espacio entre tarjetas */
+  justify-content: center;
+}
+
+.guias-articulo-destacado, .guias-articulo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px; /* Aumenta el tamaño máximo de las tarjetas */
+  width: 100%;
+  padding: 20px; /* Aumenta el relleno para mayor espacio interno */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Mayor sombra para destacar */
+}
+
+.guias-art-foto {
+  width: 200px; /* Aumenta el ancho de las fotos */
+  height: 150px; /* Aumenta la altura de las fotos */
+  object-fit: cover;
+  border-radius: 6px; /* Mantén los bordes redondeados */
+  margin-right: 20px; /* Más espacio entre la imagen y el texto */
+}
+
+.guias-art-titulo {
+  font-size: 22px; /* Aumenta el tamaño del texto del título */
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.articulo-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.seccion-titulo {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+
+#trivia-titulo {
+  color: aliceblue;
+  font-size: 300%;
+  letter-spacing: 0.5em;
+  margin: 5px;
+}
+
+#trivia-articulos-contenedor {
+  background-color: #282c34; /* Fondo blanco */
+  text-align: center;
+  padding: 20px; /* Espacio interno alrededor de los artículos */ /* Bordes redondeados */
+  max-width: 1120px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor en la pantalla */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para que resalte */
+}
+
+#trivia-articulos {
+  display: flex;
+  background-color:#282c34;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre los artículos */
+}
+
+.trivia-articulo {
+  max-width: 900px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+.trivia-articulo-imagen {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.trivia-articulo-texto {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+.trivia-articulo-categoria {
+  font-size: 0.9em;
+  color:gold;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.trivia-articulo-detalles {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+} 
+
+
+#trivia-fondo{
+background-image: url('./recursos/trivia-background.jpg');
+background-size: cover;
+
+}
+.series-articulos {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #292c34;
+}
+
+.series-articulo {
+  display: flex;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.series-articulo-imagen {
+  width: 150px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.series-articulo-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.series-articulo-texto h2 {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.series-articulo-texto p {
+  font-size: 0.9em;
+  color: #333;
+  margin: 8px 0;
+}
+
+.categoria {
+  font-size: 0.8em;
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.detalles {
+  font-size: 0.8em;
+  color: #777;
+  margin-top: 5px;
+}
