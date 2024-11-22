@@ -1,6 +1,6 @@
 
 import React from 'react';
-import mainBanner from '../recursos/main-baner1.jpg';
+import mainBanner from '../recursos/Main_BannerLogo.png';
 import TheOregonTrail from '../recursos/42zardfyztqd1.jpeg';
 import rey from '../recursos/c1bb5f6f4a814f2ce4b46b9ebcbf57c649f87b2b06b115b0148e1fbf5dbbdf6a._BR-6_AC_SX720_FMjpg_.jpg';
 import trump from '../recursos/animetrump-raises-fist-after-shooting.jpg';
