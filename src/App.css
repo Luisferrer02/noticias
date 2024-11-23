@@ -146,6 +146,7 @@
   flex: 1 1 calc(33.333% - 20px); /* Cada tarjeta ocupa un tercio del contenedor menos el espacio entre ellas */
   margin: 10px; /* Espacio entre las tarjetas */
 }
+
 #main-noticiaReciente1,
 #main-noticiaReciente2,
 #main-noticiaReciente3,
@@ -170,7 +171,7 @@
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
-  padding-bottom: 10px; /* Ajusta el padding-bottom para subir el texto */
+  padding-bottom: 150px; /* Ajusta el padding-bottom para subir el texto */
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
