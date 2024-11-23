@@ -133,41 +133,48 @@
   background-image: url('./recursos/serie5000.jpg');
 }
 
-
-
 #noticias-recientes {
   display: flex;
-  flex-wrap: nowrap; /* Changed from wrap to nowrap */
-  justify-content: center;
-  background-color: #444; /* Cambiado a un color más oscuro para mayor visibilidad */
-  margin-top: -250px;
-  padding: 20px; /* Added padding to ensure content doesn't touch the edges */
-  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  justify-content: space-between; /* Espacio entre las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #eed47b; /* Fondo rojo detrás de las tarjetas */
 }
 
-
+#noticias-recientes .tarjeta {
+  flex: 1 1 calc(33.333% - 20px); /* Cada tarjeta ocupa un tercio del contenedor menos el espacio entre ellas */
+  margin: 10px; /* Espacio entre las tarjetas */
+}
 #main-noticiaReciente1,
 #main-noticiaReciente2,
-#main-noticiaReciente3 {
+#main-noticiaReciente3,
+#main-noticiaReciente4,
+#main-noticiaReciente5,
+#main-noticiaReciente6,
+#main-noticiaReciente7,
+#main-noticiaReciente8,
+#main-noticiaReciente9 {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: flex-start; /* Align items to the top */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* Alinea el contenido al final del contenedor */
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
   transform: scale(0.7);
-  height: fit-content;
   height: 50pc;
   font-size: 2em;
   color: white;
-  width: 33.33%; /* Fit three items in one line */
+  width: 30%; /* Ajusta el ancho para que quepan 3 en una fila */
   box-sizing: border-box;
   text-align: center;
-  margin-top: 0;
-  padding-top: 20px; /* Added padding to the top */
-  margin-right: 0; /* Adjusted margin to 0 */
-  padding-bottom: 0; /* Removed padding from the bottom */
+  padding: 20px;
+  padding-bottom: 10px; /* Ajusta el padding-bottom para subir el texto */
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #333;
 }
 
 #main-noticiaReciente1 {
@@ -180,6 +187,34 @@
 
 #main-noticiaReciente3 {
   background-image: url('./recursos/sc.jpeg');
+}
+
+#main-noticiaReciente4 {
+  background-image: url('./recursos/default-image.jpg');
+}
+
+#main-noticiaReciente5 {
+  background-image: url('./recursos/default-image.jpg');
+}
+
+#main-noticiaReciente6 {
+  background-image: url('./recursos/default-image.jpg');
+}
+
+#main-noticiaReciente7 {
+  background-image: url('./recursos/default-image.jpg');
+}
+
+#main-noticiaReciente8 {
+  background-image: url('./recursos/default-image.jpg');
+}
+
+#main-noticiaReciente9 {
+  background-image: url('./recursos/default-image.jpg');
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 html, body {
