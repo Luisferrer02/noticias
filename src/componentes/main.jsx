@@ -34,10 +34,13 @@ function Main({ irAAnalisis, irAGuias, irATrivia, irASeries }) {
         
         <h1 id="main-noticiaReciente4">Los padres de Elden Ring están en racha y, tras lanzar el DLC mejor valorado de la historia, nos dan buenos motivos para seguirlos de cerca</h1>
         
-        <h1 id="main-noticiaReciente5">Los padres de Elden Ring están en racha y, tras lanzar el DLC mejor valorado de la historia, nos dan buenos motivos para seguirlos de cerca</h1>
-        <h1 id="main-noticiaReciente6">Texto por defecto</h1>
+        <h1 id="main-noticiaReciente5">Ahora puedes jugar gratis a Star Citizen, el ambicioso juego de mundo abierto de ciencia ficcion</h1>
+
+        <h1 id="main-noticiaReciente6">Stalker 2 ya es un exito comercial: Vende 1 millón de copias en su estreno,y eso sin contar con Xbox Game Pass</h1>
         <h1 id="main-noticiaReciente7">Texto por defecto</h1>
         <h1 id="main-noticiaReciente8">Texto por defecto</h1>
+
+        <h1 id="main-noticiaReciente9">Texto por defecto</h1>
       
 
       
