@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PageFooter from "./pageFooter";
 
 function Analisis({ volver }) {
   return <div id="return-pagAnalisis">
@@ -44,6 +45,7 @@ function Analisis({ volver }) {
         </div>
       </div>
     </header>
+    <PageFooter/>
   </div>
   }
   

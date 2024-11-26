@@ -483,3 +483,58 @@ background-size: cover;
   color: #777;
   margin-top: 5px;
 }
+
+
+#footer-area {
+  width: 100vw;
+  height: 15vh;
+  background-color: black;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  color: lightgoldenrodyellow;
+}
+
+.footer-link {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  cursor: pointer;
+  color: rgb(225, 186, 87);
+  font-weight: bolder;
+}
+
+#foot-socmed-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+#foot-socmed-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: white;
+}
+
+#foot-media-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-link-media {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.footer-link-media:hover {
+  cursor: pointer;
+  color: rgb(225, 186, 87);
+  font-weight: bolder;
+}
