@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/noticias/static/css/main.a3913a7d.css",
-    "main.js": "/noticias/static/js/main.43761478.js",
+    "main.css": "/noticias/static/css/main.6cc2bd39.css",
+    "main.js": "/noticias/static/js/main.a5b0b3c5.js",
     "static/js/453.edd34506.chunk.js": "/noticias/static/js/453.edd34506.chunk.js",
     "static/media/Analisis_Mouthwashing_Portada.jpg": "/noticias/static/media/Analisis_Mouthwashing_Portada.c32987624cd0f68dde86.jpg",
+    "static/media/Main_BannerLogo.png": "/noticias/static/media/Main_BannerLogo.f1af32eaac9a9c3c7b6e.png",
+    "static/media/stalker.jpg": "/noticias/static/media/stalker.fcd5643d29cb3ed149d3.jpg",
+    "static/media/eldeeenriiiin.jpeg": "/noticias/static/media/eldeeenriiiin.b2ba72185ca050c8b116.jpeg",
     "static/media/Analisis_Hades2_Portada.jpg": "/noticias/static/media/Analisis_Hades2_Portada.3eecbc2efd836d73c205.jpg",
     "static/media/main-bo66.jpg": "/noticias/static/media/main-bo66.07759c13f4c63c552958.jpg",
     "static/media/r6.avif": "/noticias/static/media/r6.fd9e5d5230bc966894b5.avif",
@@ -15,23 +18,24 @@
     "static/media/trivia_trump.jpeg": "/noticias/static/media/trivia_trump.107b5783cee8cb969f06.jpeg",
     "static/media/The_Oregon_Trail.jpeg": "/noticias/static/media/The_Oregon_Trail.cb8649f4c74c282355c9.jpeg",
     "static/media/barracuda.jpg": "/noticias/static/media/barracuda.0a357456d15bf00f14e4.jpg",
+    "static/media/voldemort.jpg": "/noticias/static/media/voldemort.84a144e890d87d22128e.jpg",
     "static/media/42zardfyztqd1.jpeg": "/noticias/static/media/42zardfyztqd1.1e0d23eda989320dd201.jpeg",
     "static/media/dragon.jpeg": "/noticias/static/media/dragon.03d1973ff090bf4bcabb.jpeg",
-    "static/media/main-baner1.jpg": "/noticias/static/media/main-baner1.86de9845bff389b24e17.jpg",
     "static/media/serie5000.jpg": "/noticias/static/media/serie5000.4587d8ff355b8fde7a23.jpg",
     "static/media/Analisis_Omori_Portada.jpg": "/noticias/static/media/Analisis_Omori_Portada.6abddb52b6971db22891.jpg",
     "static/media/_BR-6_AC_SX720_FMjpg_.jpg": "/noticias/static/media/c1bb5f6f4a814f2ce4b46b9ebcbf57c649f87b2b06b115b0148e1fbf5dbbdf6a._BR-6_AC_SX720_FMjpg_.f645e5bc358615dfd85d.jpg",
     "static/media/trivia_rey.jpeg": "/noticias/static/media/trivia_rey.ebb61f794bfcafa0ed09.jpeg",
     "static/media/Analisis_Journey_Portada.jpg": "/noticias/static/media/Analisis_Journey_Portada.d9f2b52007a89e3c9729.jpg",
     "static/media/trivia-background.jpg": "/noticias/static/media/trivia-background.dce33ba8677067445d82.jpg",
+    "static/media/default-image.jpg": "/noticias/static/media/default-image.85d8d1eda7f078792068.jpg",
     "static/media/gow.jpg": "/noticias/static/media/gow.a37923385ed6f81a2314.jpg",
     "index.html": "/noticias/index.html",
-    "main.a3913a7d.css.map": "/noticias/static/css/main.a3913a7d.css.map",
-    "main.43761478.js.map": "/noticias/static/js/main.43761478.js.map",
+    "main.6cc2bd39.css.map": "/noticias/static/css/main.6cc2bd39.css.map",
+    "main.a5b0b3c5.js.map": "/noticias/static/js/main.a5b0b3c5.js.map",
     "453.edd34506.chunk.js.map": "/noticias/static/js/453.edd34506.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3913a7d.css",
-    "static/js/main.43761478.js"
+    "static/css/main.6cc2bd39.css",
+    "static/js/main.a5b0b3c5.js"
   ]
 }
