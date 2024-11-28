@@ -1,7 +1,6 @@
 import PageFooter from "./pageFooter";
 import './general.css'; 
 
-
 function guiasYTrucos({ volver }) {
   // Datos de los artículos
   const articulosDestacados = [
@@ -18,9 +17,9 @@ function guiasYTrucos({ volver }) {
     <>
     <div id="return">
       <header id="zonaSuperior">
-        <div id="logo"/>
+        <div className="logo" />
         <nav id="cabecera">
-          <div id="botones" className="botones">
+          <div className="botones">
             <button onClick={volver}>Volver al Main</button>
           </div>
           <h1 id="tituloPag"> GUIAS </h1>
@@ -30,7 +29,7 @@ function guiasYTrucos({ volver }) {
         {/* Artículos destacados */}
         <section id="articulo-destacados-area">
           <h2 className="articulos-seccion-titulo">Artículos Destacados</h2>
-          <div id="articulos-destacados-lista">
+          <div className="articulos-destacados-lista">
             {articulosDestacados.map((articulo, index) => (
               <div key={index} className="articulo-destacado">
                 <img src={articulo.image} alt={articulo.title} className="articulo-foto" />
@@ -43,7 +42,7 @@ function guiasYTrucos({ volver }) {
         {/* Resto de artículos */}
         <section id="articulo-area">
           <h2 className="articulos-seccion-titulo">Más Artículos</h2>
-          <div id="articulos-lista">
+          <div className="articulos-lista">
             {articulosNormales.map((articulo, index) => (
               <div key={index} className="articulo">
                 <img src={articulo.image} alt={articulo.title} className="articulo-foto" />

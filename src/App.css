@@ -1,4 +1,4 @@
-#logo {
+.logo {
   justify-content: center;
   background-image: url("./recursos/Main_BannerLogo.png");
   transform: scale(1.1);

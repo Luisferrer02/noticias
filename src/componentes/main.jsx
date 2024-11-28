@@ -3,7 +3,7 @@ function Main({ irAAnalisis, irAGuias, irATrivia, irASeries }) {
     <>
       {/* COPIAD ESTO PARA TENER LA MISMA CABECERA */}
       <header id="zonaSuperior">
-        <div id="logo">
+        <div className="logo">
           <div>
             hola
           </div>

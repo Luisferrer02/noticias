@@ -35,10 +35,10 @@ function Series({ volver }) {
   return (
     <>
     <div id="return">
-      <header id="main-zonaSuperior">
-        <div id="logo"/>
+      <header id="zonaSuperior">
+        <div className="logo"/>
         <nav id="cabecera">
-          <div id="botones" className="botones">
+          <div className="botones">
             <button onClick={volver}>Volver al Main</button>
           </div>
           <h1 id="tituloPag">SERIES</h1>
@@ -49,12 +49,12 @@ function Series({ volver }) {
 
       <section id="articulo-area">
           <h2 className="articulos-seccion-titulo">Artículos </h2>
-          <div id="articulos-lista">
+          <div className="articulos-lista">
             {articulos.map((articulo, index) => (
               <div key={index} className="articulo">
                 <img src={articulo.imagen} alt={articulo.titulo} className="articulo-foto"/>
                   <h3 className="articulo-titulo">{articulo.titulo}</h3>
-                  <p className="guias-art-descripcion">{articulo.descripcion}</p>
+                  <p className="articulo-descripcion">{articulo.descripcion}</p>
                   <span className="articulo-categoria">{articulo.categoria}</span>
                   <div className="articulo-detalles">
                   <span>{articulo.fecha}</span> - <span>{articulo.autor}</span> - <span>{articulo.comentarios}</span>

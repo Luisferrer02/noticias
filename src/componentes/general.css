@@ -1,9 +1,12 @@
-#articulos-destacados-lista,
-#articulos-lista {
+.articulos-destacados-lista,
+.articulos-lista {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px; /* Aumenta el espacio entre tarjetas */
+  gap: 30px; /* Espacio más amplio entre las tarjetas */
   justify-content: center;
+  padding: 20px; /* Agrega un espacio interno al contenedor */
+  background-color: #ffae00; 
+  border-radius: 10px; /* Borde redondeado para suavizar el diseño del contenedor */
 }
 
 .articulo-destacado,
@@ -11,49 +14,93 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  max-width: 800px; /* Aumenta el tamaño máximo de las tarjetas */
+  background-color: #ffffff; /* Fondo limpio y profesional */
+  border: 1px solid #ccc; /* Color de borde más sutil */
+  border-radius: 10px; /* Mayor redondez en los bordes */
+  max-width: 900px; /* Aumenta ligeramente el tamaño máximo */
   width: 100%;
-  padding: 20px; /* Aumenta el relleno para mayor espacio interno */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Mayor sombra para destacar */
+  padding: 25px; /* Relleno más cómodo para el contenido */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más sutil y profesional */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Efecto suave al pasar el mouse */
+}
+
+.articulo-destacado:hover,
+.articulo:hover {
+  transform: scale(1.02); /* Efecto de aumento suave al pasar el mouse */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Acentúa la sombra al interactuar */
 }
 
 .articulo-foto {
-  width: 200px; /* Aumenta el ancho de las fotos */
-  height: 150px; /* Aumenta la altura de las fotos */
+  width: 220px; /* Ancho más amplio para destacar imágenes */
+  height: 160px; /* Proporción ajustada a un diseño más visual */
   object-fit: cover;
-  border-radius: 6px; /* Mantén los bordes redondeados */
-  margin-right: 20px; /* Más espacio entre la imagen y el texto */
+  border-radius: 8px; /* Redondea las esquinas de la imagen */
+  margin-right: 25px; /* Espacio más generoso entre imagen y texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar las fotos */
 }
 
 .articulo-titulo {
-  font-size: 22px; /* Aumenta el tamaño del texto del título */
+  font-size: 24px; /* Tamaño más grande para destacar títulos */
   margin: 0;
   margin-bottom: 10px;
+  color: #333; /* Texto más oscuro para mejor contraste */
+  font-weight: bold;
+  line-height: 1.4; /* Mejor legibilidad */
 }
 
 .articulo-texto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between; /* Asegura una separación equilibrada */
+  gap: 10px; /* Espaciado interno entre elementos del texto */
 }
 
 .articulos-seccion-titulo {
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-align: center; /* Centra el texto */
+  font-size: 28px; /* Tamaño más grande para destacar la sección */
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222; /* Color más oscuro para mejor visibilidad */
+  font-weight: 700;
+  text-transform: uppercase; /* Da un toque más estilizado al título */
 }
 
 .articulo-categoria {
-  font-size: 0.8em;
-  color: #ffd700;
+  font-size: 0.9em; /* Tamaño ligeramente más grande para mayor legibilidad */
+  color: #ffae00; /* Color dorado más vivo */
   font-weight: bold;
+  text-transform: uppercase; /* Estiliza las categorías */
+  letter-spacing: 0.5px; /* Añade un pequeño espaciado para claridad */
 }
 
 .articulo-detalles {
-  font-size: 0.8em;
-  color: #777;
-  margin-top: 5px;
+  font-size: 0.85em; /* Ajusta el tamaño para mayor legibilidad */
+  color: #666; /* Un color gris más suave */
+  margin-top: 8px;
+  line-height: 1.4; /* Mejora la legibilidad del texto */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .articulo-destacado,
+  .articulo {
+    flex-direction: column; /* Cambia a diseño vertical en pantallas más pequeñas */
+    align-items: center; /* Centra los elementos */
+    text-align: center;
+  }
+
+  .articulo-foto {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 0; /* Elimina el margen lateral */
+    margin-bottom: 15px; /* Agrega espacio debajo de la imagen */
+  }
+
+  .articulo-texto {
+    align-items: center; /* Centra el contenido */
+  }
+
+  .articulos-destacados-lista,
+  .articulos-lista {
+    gap: 15px; /* Reduce el espacio entre tarjetas */
+  }
 }

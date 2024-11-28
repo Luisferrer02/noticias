@@ -32,7 +32,7 @@ function Trivia({ volver }) {
     <>
     <div id="return"> {/* ID compartido con GuiasYTrucos */}
       <header id="zonaSuperior">
-        <div id="logo"/>
+        <div className="logo"/>
         <nav id="cabecera">
           <div id="botones" className="botones">
             <button onClick={volver}>Volver al Main</button>
@@ -43,7 +43,7 @@ function Trivia({ volver }) {
         {/* Artículos destacados */}
         <section id="articulo-destacados-area">
           <h2 className="articulos-seccion-titulo">Artículo Destacado</h2>
-          <div id="articulos-destacados-lista">
+          <div className="articulos-destacados-lista">
             {articulosDestacados.map((articulo, index) => (
               <div key={index} className="articulo-destacado">
                 <img
@@ -62,7 +62,7 @@ function Trivia({ volver }) {
         {/* Resto de artículos */}
         <section id="articulo-area">
           <h2 className="articulos-seccion-titulo">Más Artículos</h2>
-          <div id="articulos-lista">
+          <div className="articulos-lista">
             {articulosNormales.map((articulo, index) => (
               <div key={index} className="articulo">
                 <img

@@ -3,14 +3,11 @@ import './analisis.css';
 
 function Analisis({ volver }) {
   return <div id="return-pagAnalisis">
-    <header id="main-zonaSuperior">
-      <div id="main-logo">
-        <div>
-          hola
-        </div>
+    <header id="zonaSuperior">
+      <div className="logo">
       </div>
       <nav id="analisis-cabecera">
-        <div id="analisis-botones" class="botones">
+        <div className="botones">
           <button onClick={volver}>Volver al Main</button>
         </div>
         <h1 id="analisis-titulo"> ANÁLISIS </h1>
