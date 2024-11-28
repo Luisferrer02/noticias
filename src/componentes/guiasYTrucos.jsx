@@ -1,5 +1,5 @@
-import { useState } from "react";
-import './main.css'; //para header
+import PageFooter from "./pageFooter";
+import './general.css'; 
 
 
 function guiasYTrucos({ volver }) {
@@ -15,44 +15,46 @@ function guiasYTrucos({ volver }) {
   ];
 
   return (
-    <div id="return-pagGuias">
-      <header id="main-zonaSuperior">
-        <div id="main-logo">
-        </div>
-        <nav id="guias-cabecera">
-          <div id="guias-botones" className="botones">
+    <>
+    <div id="return">
+      <header id="zonaSuperior">
+        <div id="logo"/>
+        <nav id="cabecera">
+          <div id="botones" className="botones">
             <button onClick={volver}>Volver al Main</button>
           </div>
-          <h1 id="guias-titulo"> GUIAS </h1>
+          <h1 id="tituloPag"> GUIAS </h1>
         </nav>
       </header>
         
         {/* Artículos destacados */}
-        <section id="guias-articulos-destacados-area">
+        <section id="articulo-destacados-area">
           <h2 className="seccion-titulo">Artículos Destacados</h2>
           <div id="articulos-destacados-lista">
             {articulosDestacados.map((articulo, index) => (
-              <div key={index} className="guias-articulo-destacado">
-                <img src={articulo.image} alt={articulo.title} className="guias-art-foto" />
-                <h3 className="guias-art-titulo">{articulo.title}</h3>
+              <div key={index} className="articulo-destacado">
+                <img src={articulo.image} alt={articulo.title} className="articulo-foto" />
+                <h3 className="articulo-titulo">{articulo.title}</h3>
               </div>
             ))}
           </div>
         </section>
         
         {/* Resto de artículos */}
-        <section id="guias-articulos-area">
+        <section id="articulo-area">
           <h2 className="seccion-titulo">Más Artículos</h2>
           <div id="articulos-lista">
             {articulosNormales.map((articulo, index) => (
-              <div key={index} className="guias-articulo">
-                <img src={articulo.image} alt={articulo.title} className="guias-art-foto" />
-                <h3 className="guias-art-titulo">{articulo.title}</h3>
+              <div key={index} className="articulo">
+                <img src={articulo.image} alt={articulo.title} className="articulo-foto" />
+                <h3 className="articulo-titulo">{articulo.title}</h3>
               </div>
             ))}
           </div>
         </section>
     </div>
+    <PageFooter/>
+    </>
   );
 }
 

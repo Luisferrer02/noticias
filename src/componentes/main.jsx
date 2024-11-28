@@ -1,6 +1,3 @@
-import { useState } from "react";
-import './main.css';
-
 function Main({ irAAnalisis, irAGuias, irATrivia, irASeries }) {
   return (
     <>

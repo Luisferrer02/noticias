@@ -1,6 +1,3 @@
-import './main.css';
-
-
 export default function PageFooter() {
     return <div id="footer-area">
         <p className="footer-link" id="foot-about">Sobre Nosotros</p>

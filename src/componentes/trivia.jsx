@@ -1,5 +1,6 @@
 import React from 'react';
-import './main.css'; // Usa el CSS compartido con GuiasYTrucos
+import PageFooter from './pageFooter';
+import './general.css'; 
 
 // Datos de los artículos
 const articulosDestacados = [
@@ -28,30 +29,29 @@ const articulosNormales = [
 
 function Trivia({ volver }) {
   return (
-    <div id="return-pagGuias"> {/* ID compartido con GuiasYTrucos */}
-      <header id="main-zonaSuperior">
-        <div id="main-logo">
-          {/* Espacio para logo */}
-        </div>
-        <nav id="guias-cabecera">
-          <div id="guias-botones" className="botones">
+    <>
+    <div id="return"> {/* ID compartido con GuiasYTrucos */}
+      <header id="zonaSuperior">
+        <div id="logo"/>
+        <nav id="cabecera">
+          <div id="botones" className="botones">
             <button onClick={volver}>Volver al Main</button>
           </div>
-          <h1 id="guias-titulo">TRIVIA</h1> {/* Usa el ID compartido */}
+          <h1 id="tituloPag">TRIVIA</h1> {/* Usa el ID compartido */}
         </nav>
 
         {/* Artículos destacados */}
-        <section id="guias-articulos-destacados-area">
+        <section id="articulo-destacados-area">
           <h2 className="seccion-titulo">Artículo Destacado</h2>
           <div id="articulos-destacados-lista">
             {articulosDestacados.map((articulo, index) => (
-              <div key={index} className="guias-articulo-destacado">
+              <div key={index} className="articulo-destacado">
                 <img
                   src={articulo.image}
                   alt={articulo.title}
-                  className="guias-art-foto"
+                  className="articulo-foto"
                 />
-                <h3 className="guias-art-titulo">{articulo.title}</h3>
+                <h3 className="articulo-titulo">{articulo.title}</h3>
                 {/*<p className="guias-articulo-categoria">{articulo.categoria}</p>
                 <p className="guias-articulo-detalles">{articulo.detalles}</p>*/}
               </div>
@@ -60,25 +60,27 @@ function Trivia({ volver }) {
         </section>
 
         {/* Resto de artículos */}
-        <section id="guias-articulos-area">
+        <section id="articulo-area">
           <h2 className="seccion-titulo">Más Artículos</h2>
           <div id="articulos-lista">
             {articulosNormales.map((articulo, index) => (
-              <div key={index} className="guias-articulo">
+              <div key={index} className="articulo">
                 <img
                   src={articulo.image}
                   alt={articulo.title}
-                  className="guias-art-foto"
+                  className="articulo-foto"
                 />
-                <h3 className="guias-art-titulo">{articulo.title}</h3>
-                {/*<p className="guias-articulo-categoria">{articulo.categoria}</p>
-                <p className="guias-articulo-detalles">{articulo.detalles}</p>*/}
+                <h3 className="articulo-titulo">{articulo.title}</h3>
+                {/*<p className="articulo-categoria">{articulo.categoria}</p>
+                <p className="articulo-detalles">{articulo.detalles}</p>*/}
               </div>
             ))}
           </div>
         </section>
       </header>
     </div>
+    <PageFooter/>
+    </>
   );
 }
 

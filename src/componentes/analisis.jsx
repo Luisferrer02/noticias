@@ -1,6 +1,5 @@
-import { useState } from "react";
-import './main.css';
 import PageFooter from "./pageFooter";
+import './analisis.css';
 
 function Analisis({ volver }) {
   return <div id="return-pagAnalisis">
