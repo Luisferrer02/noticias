@@ -5,7 +5,7 @@
   gap: 30px; /* Espacio más amplio entre las tarjetas */
   justify-content: center;
   padding: 20px; /* Agrega un espacio interno al contenedor */
-  background-color: #ffae00; 
+  background-color: #eed47b; 
   border-radius: 10px; /* Borde redondeado para suavizar el diseño del contenedor */
 }
 
