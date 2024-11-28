@@ -1,4 +1,6 @@
 import { useState } from "react";
+import './main.css'; //para header
+
 
 function guiasYTrucos({ volver }) {
   // Datos de los artículos
@@ -23,6 +25,7 @@ function guiasYTrucos({ volver }) {
           </div>
           <h1 id="guias-titulo"> GUIAS </h1>
         </nav>
+      </header>
         
         {/* Artículos destacados */}
         <section id="guias-articulos-destacados-area">
@@ -49,7 +52,6 @@ function guiasYTrucos({ volver }) {
             ))}
           </div>
         </section>
-      </header>
     </div>
   );
 }

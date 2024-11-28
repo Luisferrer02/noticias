@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './main.css';
 import PageFooter from "./pageFooter";
 
 function Analisis({ volver }) {
