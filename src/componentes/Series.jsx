@@ -48,18 +48,16 @@ function Series({ volver }) {
       {/* Artículos */}
 
       <section id="articulo-area">
-          <h2 className="seccion-titulo">Artículos </h2>
+          <h2 className="articulos-seccion-titulo">Artículos </h2>
           <div id="articulos-lista">
             {articulos.map((articulo, index) => (
               <div key={index} className="articulo">
                 <img src={articulo.imagen} alt={articulo.titulo} className="articulo-foto"/>
-                <div className="guias-art-texto">
                   <h3 className="articulo-titulo">{articulo.titulo}</h3>
                   <p className="guias-art-descripcion">{articulo.descripcion}</p>
                   <span className="articulo-categoria">{articulo.categoria}</span>
                   <div className="articulo-detalles">
                   <span>{articulo.fecha}</span> - <span>{articulo.autor}</span> - <span>{articulo.comentarios}</span>
-                </div>
               </div>
             </div>
           ))}

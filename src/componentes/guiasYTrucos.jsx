@@ -29,7 +29,7 @@ function guiasYTrucos({ volver }) {
         
         {/* Artículos destacados */}
         <section id="articulo-destacados-area">
-          <h2 className="seccion-titulo">Artículos Destacados</h2>
+          <h2 className="articulos-seccion-titulo">Artículos Destacados</h2>
           <div id="articulos-destacados-lista">
             {articulosDestacados.map((articulo, index) => (
               <div key={index} className="articulo-destacado">
@@ -42,7 +42,7 @@ function guiasYTrucos({ volver }) {
         
         {/* Resto de artículos */}
         <section id="articulo-area">
-          <h2 className="seccion-titulo">Más Artículos</h2>
+          <h2 className="articulos-seccion-titulo">Más Artículos</h2>
           <div id="articulos-lista">
             {articulosNormales.map((articulo, index) => (
               <div key={index} className="articulo">

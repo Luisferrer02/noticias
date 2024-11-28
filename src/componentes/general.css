@@ -1,0 +1,59 @@
+#articulos-destacados-lista,
+#articulos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; /* Aumenta el espacio entre tarjetas */
+  justify-content: center;
+}
+
+.articulo-destacado,
+.articulo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px; /* Aumenta el tamaño máximo de las tarjetas */
+  width: 100%;
+  padding: 20px; /* Aumenta el relleno para mayor espacio interno */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Mayor sombra para destacar */
+}
+
+.articulo-foto {
+  width: 200px; /* Aumenta el ancho de las fotos */
+  height: 150px; /* Aumenta la altura de las fotos */
+  object-fit: cover;
+  border-radius: 6px; /* Mantén los bordes redondeados */
+  margin-right: 20px; /* Más espacio entre la imagen y el texto */
+}
+
+.articulo-titulo {
+  font-size: 22px; /* Aumenta el tamaño del texto del título */
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.articulo-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.articulos-seccion-titulo {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center; /* Centra el texto */
+}
+
+.articulo-categoria {
+  font-size: 0.8em;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.articulo-detalles {
+  font-size: 0.8em;
+  color: #777;
+  margin-top: 5px;
+}

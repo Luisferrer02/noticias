@@ -2,8 +2,8 @@ function Main({ irAAnalisis, irAGuias, irATrivia, irASeries }) {
   return (
     <>
       {/* COPIAD ESTO PARA TENER LA MISMA CABECERA */}
-      <header id="main-zonaSuperior">
-        <div id="main-logo">
+      <header id="zonaSuperior">
+        <div id="logo">
           <div>
             hola
           </div>

@@ -22,7 +22,7 @@
 }
 
 .botones button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border: none;
   color: white;
   padding: 10px 20px; /* Reducido el padding */
@@ -40,14 +40,15 @@
   background-color: #45a049;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
-
 
 #cabecera {
   display: flex;
@@ -57,79 +58,18 @@ html, body {
   margin-top: 14px;
   border-radius: 0%;
   width: 100%;
-  padding: 10px; 
+  padding: 10px;
   box-sizing: border-box;
-  height: fit-content; 
+  height: fit-content;
 }
 
-
-#tituloPag { /*titulo de por ejemplo guia, series, etc*/
+#tituloPag {
+  /*titulo de por ejemplo guia, series, etc*/
   color: aliceblue;
   font-size: 220%;
   letter-spacing: 0.5em;
   margin: 5px;
 }
-
-#articulos-destacados-lista, #articulos-lista {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px; /* Aumenta el espacio entre tarjetas */
-  justify-content: center;
-}
-
-.articulo-destacado, .articulo {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  max-width: 800px; /* Aumenta el tamaño máximo de las tarjetas */
-  width: 100%;
-  padding: 20px; /* Aumenta el relleno para mayor espacio interno */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Mayor sombra para destacar */
-}
-
-.articulo-foto {
-  width: 200px; /* Aumenta el ancho de las fotos */
-  height: 150px; /* Aumenta la altura de las fotos */
-  object-fit: cover;
-  border-radius: 6px; /* Mantén los bordes redondeados */
-  margin-right: 20px; /* Más espacio entre la imagen y el texto */
-}
-
-.articulo-titulo {
-  font-size: 22px; /* Aumenta el tamaño del texto del título */
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.articulo-texto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
-
-.articulos-seccion-titulo {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-
-.articulo-categoria {
-  font-size: 0.8em;
-  color: #FFD700;
-  font-weight: bold;
-}
-
-.articulo-detalles {
-  font-size: 0.8em;
-  color: #777;
-  margin-top: 5px;
-}
-
 
 #footer-area {
   width: 100vw;
@@ -186,9 +126,141 @@ html, body {
 }
 
 #return {
-  background-image: url('./recursos/trivia-background.jpg'); /* Ruta relativa a tu archivo CSS */
+  background-image: url("./recursos/trivia-background.jpg"); /* Ruta relativa a tu archivo CSS */
   background-size: cover; /* Ajusta la imagen para que cubra todo el área */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   min-height: 100vh; /* Asegúrate de que cubra al menos la altura de la pantalla */
+}
+
+#main-paginas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(185, 184, 117, 0.8);
+  margin-top: 14px;
+  border-radius: 0%;
+  border: 2px solid #61dafb;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+#noticias-destacadas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #282c34;
+  margin-top: -150px;
+}
+
+#main-noticiaDestacada1,
+#main-noticiaDestacada2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  transform: scale(0.7);
+  height: fit-content;
+  height: 55pc; /* Reduced height */
+  font-size: 2em;
+  color: white;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 100px; /* Increased margin-top to lower the elements by 30pc */
+  padding-top: 0;
+  margin-right: -20px;
+}
+
+#main-noticiaDestacada1 {
+  background-image: url("./recursos/barracuda.jpg");
+}
+
+#main-noticiaDestacada2 {
+  background-image: url("./recursos/serie5000.jpg");
+}
+
+#noticias-recientes {
+  display: flex;
+  justify-content: space-between; /* Espacio entre las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #eed47b; /* Fondo rojo detrás de las tarjetas */
+}
+
+#noticias-recientes .tarjeta {
+  flex: 1 1 calc(33.333% - 20px); /* Cada tarjeta ocupa un tercio del contenedor menos el espacio entre ellas */
+  margin: 10px; /* Espacio entre las tarjetas */
+}
+
+#main-noticiaReciente1,
+#main-noticiaReciente2,
+#main-noticiaReciente3,
+#main-noticiaReciente4,
+#main-noticiaReciente5,
+#main-noticiaReciente6,
+#main-noticiaReciente7,
+#main-noticiaReciente8,
+#main-noticiaReciente9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* Alinea el contenido al final del contenedor */
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  transform: scale(0.7);
+  height: 50pc;
+  font-size: 2em;
+  color: white;
+  width: 30%; /* Ajusta el ancho para que quepan 3 en una fila */
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 150px; /* Ajusta el padding-bottom para subir el texto */
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+}
+
+#main-noticiaReciente1 {
+  background-image: url("./recursos/main-bo66.jpg");
+}
+
+#main-noticiaReciente2 {
+  background-image: url("./recursos/steam-dek.jpeg");
+}
+
+#main-noticiaReciente3 {
+  background-image: url("./recursos/sc.jpeg");
+}
+
+#main-noticiaReciente4 {
+  background-image: url("./recursos/eldeeenriiiin.jpeg");
+}
+
+#main-noticiaReciente5 {
+  background-image: url("./recursos/voldemort.jpg ");
+}
+
+#main-noticiaReciente6 {
+  background-image: url("./recursos/stalker.jpg");
+}
+
+#main-noticiaReciente7 {
+  background-image: url("./recursos/default-image.jpg");
+}
+
+#main-noticiaReciente8 {
+  background-image: url("./recursos/default-image.jpg");
+}
+
+#main-noticiaReciente9 {
+  background-image: url("./recursos/default-image.jpg");
 }
