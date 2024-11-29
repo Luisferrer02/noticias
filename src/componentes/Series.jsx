@@ -4,7 +4,7 @@ import './general.css';
 function Series({ volver }) {
   const articulos = [
     {
-      titulo: '...',
+      titulo: 'Cancelan el anime de Transformers por recortes en presupuesto',
       descripcion: 'Ahora yo...',
       categoria: 'Series de moda',
       fecha: 'Hace 1 hora',
@@ -13,8 +13,8 @@ function Series({ volver }) {
       imagen: require('../recursos/42zardfyztqd1.jpeg'),
     },
     {
-      titulo: 'The Walking Dead: Daryl Dixon',
-      descripcion: 'Nueva Serie',
+      titulo: 'The Walking Dead: Daryl Dixon: La nueva serie de la saga',
+      descripcion: '¿Qué podemos esperar de la primera temporada?',
       categoria: 'Series',
       fecha: 'Hace 3 horas',
       autor: 'Álvaro Pérez',
@@ -54,11 +54,11 @@ function Series({ volver }) {
               <div key={index} className="articulo">
                 <img src={articulo.imagen} alt={articulo.titulo} className="articulo-foto"/>
                   <h3 className="articulo-titulo">{articulo.titulo}</h3>
-                  <p className="articulo-descripcion">{articulo.descripcion}</p>
+                  {/*<p className="articulo-descripcion">{articulo.descripcion}</p>
                   <span className="articulo-categoria">{articulo.categoria}</span>
                   <div className="articulo-detalles">
                   <span>{articulo.fecha}</span> - <span>{articulo.autor}</span> - <span>{articulo.comentarios}</span>
-              </div>
+                  </div>*/}
             </div>
           ))}
         </div>

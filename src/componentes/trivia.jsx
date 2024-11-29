@@ -52,8 +52,10 @@ function Trivia({ volver }) {
                   className="articulo-foto"
                 />
                 <h3 className="articulo-titulo">{articulo.title}</h3>
-                {/*<p className="guias-articulo-categoria">{articulo.categoria}</p>
-                <p className="guias-articulo-detalles">{articulo.detalles}</p>*/}
+                {/*<span className="articulo-categoria">{articulo.categoria}</span>
+                <div className="articulo-detalles">
+                  <span>{articulo.fecha}</span> - <span>{articulo.autor}</span> - <span>{articulo.comentarios}</span>
+                </div>*/}
               </div>
             ))}
           </div>

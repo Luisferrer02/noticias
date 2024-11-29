@@ -1,50 +1,76 @@
 import PageFooter from "./pageFooter";
-import './analisis.css';
+import './general.css'; 
 
-function Analisis({ volver }) {
-  return <div id="return-pagAnalisis">
-    <header id="zonaSuperior">
-      <div className="logo">
-      </div>
-      <nav id="analisis-cabecera">
-        <div className="botones">
-          <button onClick={volver}>Volver al Main</button>
-        </div>
-        <h1 id="analisis-titulo"> ANÁLISIS </h1>
-      </nav>
-      <div className="fondo-dorado">
-        <div id="an-articulos-area">
-          <div className="analisis-articulo" id="an-art-omori">
-            <div className="an-art-foto" id="an-art-foto-omori"/>
-            <h1 className="an-art-titulo">OMORI: Como contar una historia a través de un estilo artístico</h1>
-            <p className="an-art-datos">fecha - autor - comentarios</p> {/* POSIBLE: Añadir enlaces a campo comentarios */}
+function analisis({ volver }) {
+  // Datos de los artículos
+  const articulosDestacados = [
+    {
+        title: "OMORI: Cómo contar una historia a través de un estilo artístico",
+        image: require('../recursos/Analisis_Omori_Portada.jpg')
+    },
+    {
+        title: "Qué hace tan especial a Mouthwashing, el nuevo juego de horror surrealista que está arrasando",
+        image: require('../recursos/Analisis_Mouthwashing_Portada.jpg')
+    }
+];
+
+const articulosNormales = [
+    {
+        title: "Journey y la conexión con otras personas",
+        image: require('../recursos/Analisis_Journey_Portada.jpg')
+    },
+    {
+        title: "Análisis del tráiler de \"Death Note: Killer Within\": lo que sabemos hasta ahora",
+        image: require('../recursos/Analisis_DeathNote_Portada.jpg')
+    },
+    {
+        title: "Hades II: Novedades, similaridades y diferencias respecto a su predecesor",
+        image: require('../recursos/Analisis_Hades2_Portada.jpg')
+    }
+];
+
+  return (
+    <>
+    <div id="return">
+      <header id="zonaSuperior">
+        <div className="logo" />
+        <nav id="cabecera">
+          <div className="botones">
+            <button onClick={volver}>Volver al Main</button>
           </div>
-          <div className="analisis-articulo" id="an-art-mouthwashing">
-            <div className="an-art-foto" id="an-art-foto-mouthwashing"/>
-            <h1 className="an-art-titulo">Que hace tan especial a Mouthwashing, el nuevo juego de horror surrealista que está arrasando</h1>
-            <p className="an-art-datos">fecha - autor - comentarios</p>
+          <h1 id="tituloPag"> ANALISIS </h1>
+        </nav>
+      </header>
+        
+        {/* Artículos destacados */}
+        <section id="articulo-destacados-area">
+          <h2 className="articulos-seccion-titulo">Artículos Destacados</h2>
+          <div className="articulos-destacados-lista">
+            {articulosDestacados.map((articulo, index) => (
+              <div key={index} className="articulo-destacado">
+                <img src={articulo.image} alt={articulo.title} className="articulo-foto" />
+                <h3 className="articulo-titulo">{articulo.title}</h3>
+              </div>
+            ))}
           </div>
-          <div className="analisis-articulo" id="an-art-journey">
-            <div className="an-art-foto" id="an-art-foto-journey"/>
-            <h1 className="an-art-titulo">Journey y la conexión con otras personas</h1>
-            <p className="an-art-datos">fecha - autor - comentarios</p>
+        </section>
+        
+        {/* Resto de artículos */}
+        <section id="articulo-area">
+          <h2 className="articulos-seccion-titulo">Más Artículos</h2>
+          <div className="articulos-lista">
+            {articulosNormales.map((articulo, index) => (
+              <div key={index} className="articulo">
+                <img src={articulo.image} alt={articulo.title} className="articulo-foto" />
+                <h3 className="articulo-titulo">{articulo.title}</h3>
+              </div>
+            ))}
           </div>
-          <div className="analisis-articulo" id="an-art-deathnote">
-            <div className="an-art-foto" id="an-art-foto-deathnote"/>
-            <h1 className="an-art-titulo">Análisis del tráiler de "Death Note: Killer Within": lo que sabemos hasta ahora</h1>
-            <p className="an-art-datos">fecha - autor - comentarios</p>
-          </div>
-          <div className="analisis-articulo" id="an-art-hades2">
-            <div className="an-art-foto" id="an-art-foto-hades2"/>
-            <h1 className="an-art-titulo">Hades II: Novedades, similaridades y diferencias respecto a su predecesor</h1>
-            <p className="an-art-datos">fecha - autor - comentarios</p>
-          </div>
-        </div>
-      </div>
-    </header>
+        </section>
+    </div>
     <PageFooter/>
-  </div>
-  }
-  
-  export default Analisis;
-  
+    </>
+  );
+}
+
+export default analisis;
