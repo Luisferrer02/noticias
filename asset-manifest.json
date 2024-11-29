@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/noticias/static/css/main.a04fb903.css",
-    "main.js": "/noticias/static/js/main.70e58c6b.js",
+    "main.css": "/noticias/static/css/main.194bf7a7.css",
+    "main.js": "/noticias/static/js/main.e20f3668.js",
     "static/js/453.edd34506.chunk.js": "/noticias/static/js/453.edd34506.chunk.js",
     "static/media/Analisis_Mouthwashing_Portada.jpg": "/noticias/static/media/Analisis_Mouthwashing_Portada.c32987624cd0f68dde86.jpg",
     "static/media/Main_BannerLogo.png": "/noticias/static/media/Main_BannerLogo.f1af32eaac9a9c3c7b6e.png",
@@ -30,12 +30,12 @@
     "static/media/default-image.jpg": "/noticias/static/media/default-image.85d8d1eda7f078792068.jpg",
     "static/media/gow.jpg": "/noticias/static/media/gow.a37923385ed6f81a2314.jpg",
     "index.html": "/noticias/index.html",
-    "main.a04fb903.css.map": "/noticias/static/css/main.a04fb903.css.map",
-    "main.70e58c6b.js.map": "/noticias/static/js/main.70e58c6b.js.map",
+    "main.194bf7a7.css.map": "/noticias/static/css/main.194bf7a7.css.map",
+    "main.e20f3668.js.map": "/noticias/static/js/main.e20f3668.js.map",
     "453.edd34506.chunk.js.map": "/noticias/static/js/453.edd34506.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a04fb903.css",
-    "static/js/main.70e58c6b.js"
+    "static/css/main.194bf7a7.css",
+    "static/js/main.e20f3668.js"
   ]
 }
