@@ -20,6 +20,8 @@
     padding: 20px; /* Espaciado interno */
     width: 90%; /* Ancho adaptativo */
     max-width: 500px; /* Tamaño máximo */
+    max-height: 80vh; /* Altura máxima del modal */
+    overflow-y: auto; /* Habilitar scroll vertical si el contenido excede la altura */
     position: relative; /* Para posicionar el botón de cierre */
     animation: fadeIn 0.3s ease-in-out; /* Efecto de entrada */
   }

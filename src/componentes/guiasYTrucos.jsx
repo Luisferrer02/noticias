@@ -12,11 +12,17 @@ function GuiasYTrucos({ volver }) {
     { 
       title: "God of War Ragnarok: Los reinos en guerra, como pasarlo", 
       image: require('../recursos/gow.jpg'),
+      author: "Juan Pérez",
+      date: "12 de Diciembre de 2024",
+      comments: "5 comentarios",
       content: "Explora los nueve reinos y descubre los secretos para derrotar a los dioses en God of War Ragnarok. Te explicamos estrategias clave para cada enemigo y cómo desbloquear el final oculto."
     },
     { 
       title: "Red Dead Redemption 2, ¿cómo resolver el misterio de Emerald Ranch y la chica que mira por la ventana?", 
       image: require('../recursos/red2.jpeg'),
+      author: "María García",
+      date: "10 de Diciembre de 2024",
+      comments: "8 comentarios",
       content: "Emerald Ranch oculta un oscuro secreto. Te llevamos paso a paso para descubrir la verdad detrás de la misteriosa chica en la ventana y cómo resolver este enigma del salvaje oeste."
     },
   ];
@@ -25,11 +31,17 @@ function GuiasYTrucos({ volver }) {
     { 
       title: "Rainbow Six Siege Año 9 Temporada 2: Todo lo que debes saber sobre los nuevos operadores: Guias y trucos", 
       image: require('../recursos/r6.avif'),
+      author: "Carlos Ruiz",
+      date: "8 de Diciembre de 2024",
+      comments: "3 comentarios",
       content: "Aprende a dominar a los nuevos operadores de Rainbow Six Siege. Descubre sus habilidades, estrategias y cómo integrarlos en tu equipo para ganar cada partida."
     },
     { 
       title: "Dragon Age The Veilguard, qué son los Recuerdos y para qué sirven", 
       image: require('../recursos/dragon.jpeg'),
+      author: "Ana Martínez",
+      date: "5 de Diciembre de 2024",
+      comments: "6 comentarios",
       content: "En Dragon Age: The Veilguard, los Recuerdos son fragmentos del pasado que revelan secretos importantes sobre el mundo y su historia. Aprende a encontrarlos y utilizarlos."
     },
   ];
@@ -64,20 +76,30 @@ function GuiasYTrucos({ volver }) {
             {articulosDestacados.map((articulo, index) => (
               <div key={index} className="articulo-destacado" onClick={() => abrirModal(articulo)}>
                 <img src={articulo.image} alt={articulo.title} className="articulo-foto" />
-                <h3 className="articulo-titulo">{articulo.title}</h3>
+                <div className="articulo-texto">
+                  <h3 className="articulo-titulo">{articulo.title}</h3>
+                  <p className="articulo-detalles">
+                    Por {articulo.author} | {articulo.date} | {articulo.comments}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </section>
         
-        {/* Resto de artículos */}
+        {/* Más artículos */}
         <section id="articulo-area">
           <h2 className="articulos-seccion-titulo">Más Artículos</h2>
           <div className="articulos-lista">
             {articulosNormales.map((articulo, index) => (
               <div key={index} className="articulo" onClick={() => abrirModal(articulo)}>
                 <img src={articulo.image} alt={articulo.title} className="articulo-foto" />
-                <h3 className="articulo-titulo">{articulo.title}</h3>
+                <div className="articulo-texto">
+                  <h3 className="articulo-titulo">{articulo.title}</h3>
+                  <p className="articulo-detalles">
+                    Por {articulo.author} | {articulo.date} | {articulo.comments}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -90,6 +112,9 @@ function GuiasYTrucos({ volver }) {
           <>
             <h2>{selectedArticle.title}</h2>
             <img src={selectedArticle.image} alt={selectedArticle.title} className="modal-imagen" />
+            <p className="articulo-detalles">
+              Por {selectedArticle.author} | {selectedArticle.date} | {selectedArticle.comments}
+            </p>
             <p>{selectedArticle.content}</p>
           </>
         )}
