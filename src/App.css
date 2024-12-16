@@ -130,23 +130,31 @@ button:hover,
   flex-wrap: wrap;
   justify-content: center;
   background-color: #282c34;
-  margin-top: -150px;
+  margin-top: 0px;  /* Reducido el margen superior a 0 */
 }
 
 #main-noticiaDestacada1,
 #main-noticiaDestacada2 {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  background-size: contain;
-  background-position: top;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   transform: scale(0.7);
-  height: 55pc;
-  font-size: 2em;
+  height: 50vh;  /* Se ajusta la altura de las tarjetas */
+  width: 45%;  /* Ajuste del ancho para dar espacio entre las tarjetas */
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;  /* Bordes redondeados para efecto de tarjeta */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Sombra suave para el efecto de profundidad */
   color: white;
-  width: 50%;
-  margin-top: 100px;
+  text-align: center;
+  font-size: 1.8em;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo translúcido si la imagen de fondo es oscura */
+  transition: transform 0.3s ease-in-out;  /* Transición suave para el efecto de escala */
 }
 
 #main-noticiaDestacada1 {
@@ -155,6 +163,23 @@ button:hover,
 
 #main-noticiaDestacada2 {
   background-image: url("./recursos/serie5000.jpg");
+}
+
+/* Opcional: Estilos de título dentro de las noticias destacadas */
+#main-noticiaDestacada1 h3,
+#main-noticiaDestacada2 h3 {
+  margin: 0;
+  padding: 10px;
+  font-size: 2.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e1ba57;  /* Color dorado para resaltar el título */
+}
+
+/* Efecto hover para agrandar las tarjetas de noticias destacadas */
+#main-noticiaDestacada1:hover,
+#main-noticiaDestacada2:hover {
+  transform: scale(0.8);  /* Aumenta ligeramente el tamaño de la tarjeta */
 }
 
 /* Recent News Section */
@@ -170,6 +195,7 @@ button:hover,
 #noticias-recientes .tarjeta {
   flex: 1 1 calc(33.333% - 20px);
   margin: 10px;
+  transition: transform 0.3s ease-in-out;  /* Transición suave para el efecto de escala */
 }
 
 #main-noticiaReciente1,
@@ -200,6 +226,7 @@ button:hover,
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #333;
+  transition: transform 0.3s ease-in-out;  /* Transición suave para el efecto de escala */
 }
 
 #main-noticiaReciente1 {
@@ -226,8 +253,26 @@ button:hover,
   background-image: url("./recursos/stalker.jpg");
 }
 
-#main-noticiaReciente7,
-#main-noticiaReciente8,
-#main-noticiaReciente9 {
-  background-image: url("./recursos/default-image.jpg");
+#main-noticiaReciente7 {
+  background-image: url("./recursos/msfs24.jpeg");
+}
+
+
+#main-noticiaReciente8{
+  background-image: url("./recursos/binladeon.jpg");
+}
+#main-noticiaReciente9{
+  background-image: url("./recursos/motor2.jpg");}
+
+/* Efecto hover para agrandar las tarjetas de noticias recientes */
+#main-noticiaReciente1:hover,
+#main-noticiaReciente2:hover,
+#main-noticiaReciente3:hover,
+#main-noticiaReciente4:hover,
+#main-noticiaReciente5:hover,
+#main-noticiaReciente6:hover,
+#main-noticiaReciente7:hover,
+#main-noticiaReciente8:hover,
+#main-noticiaReciente9:hover {
+  transform: scale(0.8);  /* Aumenta ligeramente el tamaño de la tarjeta */
 }

@@ -1,3 +1,5 @@
+import PageFooter from './pageFooter';
+
 function Main({ irAAnalisis, irAGuias, irATrivia, irASeries }) {
   return (
     <>
@@ -42,16 +44,26 @@ function Main({ irAAnalisis, irAGuias, irATrivia, irASeries }) {
           Los padres de Elden Ring están en racha y, tras lanzar el DLC mejor valorado de la historia, nos dan buenos motivos para seguirlos de cerca
         </h1>
         <h1 id="main-noticiaReciente5">
-          Ahora puedes jugar gratis a Star Citizen, el ambicioso juego de mundo abierto de ciencia ficción
+          Ahora puedes jugar gratis a Star Citizen, el ambicioso juego de mundo abierto de ciencia ficción  
         </h1>
         <h1 id="main-noticiaReciente6">
           Stalker 2 ya es un éxito comercial: Vende 1 millón de copias en su estreno, y eso sin contar con Xbox Game Pass
         </h1>
-        <h1 id="main-noticiaReciente7">Texto por defecto</h1>
-        <h1 id="main-noticiaReciente8">Texto por defecto</h1>
-        <h1 id="main-noticiaReciente9">Texto por defecto</h1>
+        <h1 id="main-noticiaReciente7">
+        Microsoft escoge a Pimax como socio VR para el lanzamiento de MSFS 2024
+
+        </h1>
+        <h1 id="main-noticiaReciente8">
+        Grok AI ya disponible: requisitos y cómo usar la inteligencia de X
+        </h1>
+        <h1 id="main-noticiaReciente9">
+        INNengine: así es el motor español que podría cambiarlo todo, o no
+        </h1>
+      
       </div>
+      <PageFooter/>
     </>
+    
   );
 }
 
