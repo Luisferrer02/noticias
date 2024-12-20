@@ -14,7 +14,8 @@ function Series({ volver }) {
       autor: "Álvaro Pérez",
       fecha: "12 de Diciembre de 2024",
       comentarios: "3 comentarios",
-      contenido: "La segunda temporada de Squid Game promete ser aún más intensa...",
+      contenido:
+        "La segunda temporada de Squid Game promete ser aún más intensa y emocional, explorando nuevas dinámicas entre los personajes y presentando juegos aún más retorcidos. Los fans están ansiosos por descubrir cómo se desarrolla la trama tras el impactante final de la primera temporada.",
     },
     {
       titulo: "The Walking Dead: Daryl Dixon",
@@ -22,7 +23,8 @@ function Series({ volver }) {
       autor: "María García",
       fecha: "10 de Diciembre de 2024",
       comentarios: "5 comentarios",
-      contenido: "El spin-off de Daryl Dixon lleva al personaje a Europa...",
+      contenido:
+        "El spin-off de Daryl Dixon lleva al personaje a Europa, enfrentando nuevos desafíos en un entorno completamente diferente. La serie ha sido aclamada por su atmósfera única y su enfoque en el desarrollo profundo del personaje principal.",
     },
     {
       titulo: "Ya ha empezado el rodaje de la 5ª temporada de The Boys",
@@ -30,7 +32,53 @@ function Series({ volver }) {
       autor: "Carlos Ruiz",
       fecha: "8 de Diciembre de 2024",
       comentarios: "8 comentarios",
-      contenido: "La quinta temporada de The Boys está en producción...",
+      contenido:
+        "La quinta temporada de The Boys está en producción, y los primeros detalles indican que será la más explosiva hasta ahora. Con giros inesperados y un elenco lleno de talento, los fans pueden esperar un espectáculo que desafía las expectativas.",
+    },
+    {
+      titulo: "Avatar 3: James Cameron revela nuevos detalles",
+      imagen: require("../recursos/avatar_teaser.jpg"),
+      autor: "Lucía Fernández",
+      fecha: "15 de Diciembre de 2024",
+      comentarios: "10 comentarios",
+      contenido:
+        "El director James Cameron ha compartido nuevos detalles sobre Avatar 3, prometiendo un enfoque más profundo en las culturas de Pandora y una historia que explorará las tensiones entre las tribus Na'vi y los humanos. El estreno está programado para diciembre de 2025.",
+    },
+    {
+      titulo: "Stranger Things: Temporada final en camino",
+      imagen: require("../recursos/stranger_things_final.jpg"),
+      autor: "Pedro López",
+      fecha: "14 de Diciembre de 2024",
+      comentarios: "15 comentarios",
+      contenido:
+        "Netflix ha confirmado que la última temporada de Stranger Things está en producción. Con la promesa de resolver todos los misterios y un final épico, los fans están más emocionados que nunca por el regreso de Eleven y su grupo de amigos.",
+    },
+    {
+      titulo: "Black Mirror: Nueva temporada explorará la IA",
+      imagen: require("../recursos/black_mirror_ai.jpg"),
+      autor: "Sofía Martínez",
+      fecha: "13 de Diciembre de 2024",
+      comentarios: "7 comentarios",
+      contenido:
+        "La próxima temporada de Black Mirror se centrará en historias relacionadas con inteligencia artificial y su impacto en la sociedad. Los creadores prometen episodios impactantes que plantearán preguntas éticas profundas sobre el uso de la tecnología.",
+    },
+    {
+      titulo: "House of the Dragon: Temporada 2 tiene fecha",
+      imagen: require("../recursos/hotd2.jpg"),
+      autor: "Jorge Hernández",
+      fecha: "12 de Diciembre de 2024",
+      comentarios: "6 comentarios",
+      contenido:
+        "La segunda temporada de House of the Dragon se estrenará en abril de 2025. Los fans pueden esperar más drama, traiciones y batallas épicas mientras la lucha por el Trono de Hierro se intensifica.",
+    },
+    {
+      titulo: "Misión Imposible 8: El tráiler rompe récords",
+      imagen: require("../recursos/mi8.jpg"),
+      autor: "Ana Torres",
+      fecha: "11 de Diciembre de 2024",
+      comentarios: "12 comentarios",
+      contenido:
+        "El tráiler de Misión Imposible 8 ha batido récords de visualizaciones en su primer día. Con Tom Cruise realizando acrobacias aún más impresionantes, esta entrega promete ser una de las mejores de la saga.",
     },
   ];
 
