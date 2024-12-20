@@ -79,6 +79,102 @@
   line-height: 1.4; /* Mejora la legibilidad del texto */
 }
 
+/* Login Page Styles */
+#login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8; /* Fondo más claro para mejor contraste */
+  padding: 20px;
+}
+
+.login-container {
+  background-color: #fff; /* Fondo blanco para claridad */
+  padding: 30px;
+  border-radius: 10px; /* Bordes redondeados para suavizar el diseño */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+  max-width: 400px; /* Ajusta el ancho máximo */
+  width: 100%;
+  text-align: center;
+}
+
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* Texto oscuro para contraste */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Bordes redondeados para modernidad */
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #007bff; /* Color azul al enfocar */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.error-message {
+  color: #ff0000; /* Texto rojo para errores */
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#loginboton {
+  background-color: #6a1b9a; /* Color púrpura vibrante */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#loginboton:hover {
+  background-color: #4a148c; /* Color púrpura más oscuro al interactuar */
+  transform: scale(1.05); /* Ligero aumento al pasar el mouse */
+}
+
+.back-button {
+  background-color: #ccc;
+  color: #333;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #bbb;
+  transform: scale(1.05);
+}
+
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
   .articulo-destacado,
@@ -103,5 +199,14 @@
   .articulos-lista {
     gap: 15px; /* Reduce el espacio entre tarjetas */
   }
+
+  .login-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  #login {
+    width: 100%; /* Botón ocupa todo el ancho en pantallas pequeñas */
+    margin: 10px 0; /* Agrega espacio superior e inferior */
+  }
 }
-/* general.css */
