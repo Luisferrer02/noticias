@@ -80,6 +80,22 @@ function Series({ volver }) {
       contenido:
         "El tráiler de Misión Imposible 8 ha batido récords de visualizaciones en su primer día. Con Tom Cruise realizando acrobacias aún más impresionantes, esta entrega promete ser una de las mejores de la saga.",
     },
+    {
+      titulo: "Nueva serie de star wars",
+      imagen: require("../recursos/Star_Wars_Tripulaciaon_Perdida_Serie_de_TV-630742343-large.jpg"),
+      autor: "Pablo motos",
+      fecha: "19 de Diciembre de 2024",
+      comentarios: "27 comentarios",
+      contenido: "La nueva serie ya ha sido criticada por muchos fans",
+    },
+    {
+      titulo: "Rambo: New Blood",
+      imagen: require("../recursos/MV5BMWM5NzVlNzMtMDNhNy00OGMxLTlmYTktOGIwMzRlZmE0ZWVmXkEyXkFqcGc@._V1_.jpg"),
+      autor: "Pablo motos",
+      fecha: "21 de Diciembre de 2024",
+      comentarios: "27 comentarios",
+      contenido: "Los fans estan atonitos ante esta nueva noticia",
+    },
   ];
 
   const abrirModal = (articulo) => {
@@ -158,3 +174,4 @@ function Series({ volver }) {
 }
 
 export default Series;
+
