@@ -3,7 +3,7 @@ import Modal from "./Modal";
 import PageFooter from "./pageFooter";
 import "./general.css";
 
-function Series({ iraLogin,irAAnalisis, irAGuias,irATrivia,volver  }) {
+function Series({ volver }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState(null);
 
@@ -14,8 +14,7 @@ function Series({ iraLogin,irAAnalisis, irAGuias,irATrivia,volver  }) {
       autor: "Álvaro Pérez",
       fecha: "12 de Diciembre de 2024",
       comentarios: "3 comentarios",
-      contenido:
-        "La segunda temporada de Squid Game promete ser aún más intensa y emocional, explorando nuevas dinámicas entre los personajes y presentando juegos aún más retorcidos. Los fans están ansiosos por descubrir cómo se desarrolla la trama tras el impactante final de la primera temporada.",
+      contenido: "La segunda temporada de Squid Game promete ser aún más intensa...",
     },
     {
       titulo: "The Walking Dead: Daryl Dixon",
@@ -23,8 +22,7 @@ function Series({ iraLogin,irAAnalisis, irAGuias,irATrivia,volver  }) {
       autor: "María García",
       fecha: "10 de Diciembre de 2024",
       comentarios: "5 comentarios",
-      contenido:
-        "El spin-off de Daryl Dixon lleva al personaje a Europa, enfrentando nuevos desafíos en un entorno completamente diferente. La serie ha sido aclamada por su atmósfera única y su enfoque en el desarrollo profundo del personaje principal.",
+      contenido: "El spin-off de Daryl Dixon lleva al personaje a Europa...",
     },
     {
       titulo: "Ya ha empezado el rodaje de la 5ª temporada de The Boys",
@@ -32,53 +30,7 @@ function Series({ iraLogin,irAAnalisis, irAGuias,irATrivia,volver  }) {
       autor: "Carlos Ruiz",
       fecha: "8 de Diciembre de 2024",
       comentarios: "8 comentarios",
-      contenido:
-        "La quinta temporada de The Boys está en producción, y los primeros detalles indican que será la más explosiva hasta ahora. Con giros inesperados y un elenco lleno de talento, los fans pueden esperar un espectáculo que desafía las expectativas.",
-    },
-    {
-      titulo: "Avatar 3: James Cameron revela nuevos detalles",
-      imagen: require("../recursos/avatar_teaser.jpg"),
-      autor: "Lucía Fernández",
-      fecha: "15 de Diciembre de 2024",
-      comentarios: "10 comentarios",
-      contenido:
-        "El director James Cameron ha compartido nuevos detalles sobre Avatar 3, prometiendo un enfoque más profundo en las culturas de Pandora y una historia que explorará las tensiones entre las tribus Na'vi y los humanos. El estreno está programado para diciembre de 2025.",
-    },
-    {
-      titulo: "Stranger Things: Temporada final en camino",
-      imagen: require("../recursos/stranger_things_final.jpg"),
-      autor: "Pedro López",
-      fecha: "14 de Diciembre de 2024",
-      comentarios: "15 comentarios",
-      contenido:
-        "Netflix ha confirmado que la última temporada de Stranger Things está en producción. Con la promesa de resolver todos los misterios y un final épico, los fans están más emocionados que nunca por el regreso de Eleven y su grupo de amigos.",
-    },
-    {
-      titulo: "Black Mirror: Nueva temporada explorará la IA",
-      imagen: require("../recursos/black_mirror_ai.jpg"),
-      autor: "Sofía Martínez",
-      fecha: "13 de Diciembre de 2024",
-      comentarios: "7 comentarios",
-      contenido:
-        "La próxima temporada de Black Mirror se centrará en historias relacionadas con inteligencia artificial y su impacto en la sociedad. Los creadores prometen episodios impactantes que plantearán preguntas éticas profundas sobre el uso de la tecnología.",
-    },
-    {
-      titulo: "House of the Dragon: Temporada 2 tiene fecha",
-      imagen: require("../recursos/hotd2.jpg"),
-      autor: "Jorge Hernández",
-      fecha: "12 de Diciembre de 2024",
-      comentarios: "6 comentarios",
-      contenido:
-        "La segunda temporada de House of the Dragon se estrenará en abril de 2025. Los fans pueden esperar más drama, traiciones y batallas épicas mientras la lucha por el Trono de Hierro se intensifica.",
-    },
-    {
-      titulo: "Misión Imposible 8: El tráiler rompe récords",
-      imagen: require("../recursos/mi8.jpg"),
-      autor: "Ana Torres",
-      fecha: "11 de Diciembre de 2024",
-      comentarios: "12 comentarios",
-      contenido:
-        "El tráiler de Misión Imposible 8 ha batido récords de visualizaciones en su primer día. Con Tom Cruise realizando acrobacias aún más impresionantes, esta entrega promete ser una de las mejores de la saga.",
+      contenido: "La quinta temporada de The Boys está en producción...",
     },
     {
       titulo: "Nueva serie de star wars",
@@ -95,6 +47,30 @@ function Series({ iraLogin,irAAnalisis, irAGuias,irATrivia,volver  }) {
       fecha: "21 de Diciembre de 2024",
       comentarios: "27 comentarios",
       contenido: "Los fans estan atonitos ante esta nueva noticia",
+    },
+    {
+      titulo: "La tercera temporada de la serie From Deja un sabor agridulce",
+      imagen: require("../recursos/From_S3_premiere.png"),
+      autor: "Pablo motos",
+      fecha: "17 de Diciembre de 2024",
+      comentarios: "27 comentarios",
+      contenido: "Muchos episodios tienen mas de un 8 pero algunos no llegan al 6",
+    },
+    {
+      titulo: "Hacen la primera serie basado en la famosa saga de juegos yakuza.",
+      imagen: require("../recursos/Yakuza_Like_a_Dragon_Miniserie_de_TV-133792825-large.jpg"),
+      autor: "Pablo motos",
+      fecha: "20 de Diciembre de 2024",
+      comentarios: "27 comentarios",
+      contenido: "Solo han sacado 6 episodios pero muchos espectadores estan decepcionados ya que ningun episodio ha superado el 7.",
+    },
+    {
+      titulo: "La serie de the penguin ha sido un exito",
+      imagen: require("../recursos/MV5BYmU3MzYzOWEtOTdkZi00YzA1LTliMzQtNDdiZDBjY2FiNmFlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"),
+      autor: "Pablo motos",
+      fecha: "19 de Diciembre de 2024",
+      comentarios: "27 comentarios",
+      contenido: "con muy buenas criticas y miles de espectadores.",
     },
   ];
 
@@ -115,11 +91,7 @@ function Series({ iraLogin,irAAnalisis, irAGuias,irATrivia,volver  }) {
           <div className="logo" />
           <nav id="cabecera">
             <div className="botones">
-            <button onClick={volver}>Main</button>
-              <button onClick={irAGuias}>Guias y Trucos</button>
-              <button onClick={irAAnalisis}>Análisis</button> 
-              <button onClick={irATrivia}>Trivia</button>
-              <button onClick={iraLogin} id="login">Login</button>
+              <button onClick={volver}>Volver al Main</button>
             </div>
             <h1 id="tituloPag">SERIES</h1>
           </nav>
@@ -178,4 +150,6 @@ function Series({ iraLogin,irAAnalisis, irAGuias,irATrivia,volver  }) {
 }
 
 export default Series;
+
+
 
