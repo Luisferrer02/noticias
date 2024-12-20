@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/noticias/static/css/main.a9d8f82f.css",
-    "main.js": "/noticias/static/js/main.0d89b55d.js",
+    "main.js": "/noticias/static/js/main.4e370f9a.js",
     "static/js/453.edd34506.chunk.js": "/noticias/static/js/453.edd34506.chunk.js",
     "static/media/From_S3_premiere.png": "/noticias/static/media/From_S3_premiere.2eccab02c1eec9a88cc6.png",
     "static/media/Analisis_Mouthwashing_Portada.jpg": "/noticias/static/media/Analisis_Mouthwashing_Portada.c32987624cd0f68dde86.jpg",
@@ -49,11 +49,11 @@
     "static/media/gow.jpg": "/noticias/static/media/gow.a37923385ed6f81a2314.jpg",
     "index.html": "/noticias/index.html",
     "main.a9d8f82f.css.map": "/noticias/static/css/main.a9d8f82f.css.map",
-    "main.0d89b55d.js.map": "/noticias/static/js/main.0d89b55d.js.map",
+    "main.4e370f9a.js.map": "/noticias/static/js/main.4e370f9a.js.map",
     "453.edd34506.chunk.js.map": "/noticias/static/js/453.edd34506.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9d8f82f.css",
-    "static/js/main.0d89b55d.js"
+    "static/js/main.4e370f9a.js"
   ]
 }
