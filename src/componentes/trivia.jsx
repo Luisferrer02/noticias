@@ -7,9 +7,16 @@ const articulosDestacados = [
   {
     title: 'Ni Minecraft ni Fortnite, el primer videojuego que invadió los colegios se creó en 1971 y ahora Apple quiere crear una película sobre él',
     image: require('../recursos/The_Oregon_Trail.jpeg'),
-    categoria: 'Juegos.Com',
+    categoria: 'Videojuegos',
     detalles: '1 hora — María López — Sin comentarios',
     content: 'Este artículo analiza el impacto de The Oregon Trail como precursor en la gamificación educativa. Ahora, Apple planea llevar esta fascinante historia al cine.'
+  },
+  {
+    title: 'El impacto de las redes sociales en las elecciones presidenciales: "Los mensajes en video son clave"',
+    image: require('../recursos/trivia_trump.jpeg'),
+    categoria: 'Tecnología',
+    detalles: '5 horas — Guillermo Perez — 7 comentarios',
+    content: 'Este análisis revela cómo las plataformas sociales influyen en los resultados electorales, con un énfasis en la efectividad de los mensajes en video.'
   },
 ];
 
@@ -22,15 +29,36 @@ const articulosNormales = [
     content: 'Descubre cómo un rey logró manipular a toda una nación a través de un bulo histórico que cambió el curso de los acontecimientos.'
   },
   {
-    title: 'El impacto de las redes sociales en las elecciones presidenciales: "Los mensajes en video son clave"',
-    image: require('../recursos/trivia_trump.jpeg'),
+    title: 'Elon Musk anunciara que creara su propio correo electronico capaz de competir con Gmail',
+    image: require('../recursos/trivia_musk.jpeg'),
     categoria: 'Tecnología',
-    detalles: '5 horas — Guillermo Perez — 7 comentarios',
-    content: 'Este análisis revela cómo las plataformas sociales influyen en los resultados electorales, con un énfasis en la efectividad de los mensajes en video.'
+    detalles: '5 horas — Eduardo Rodriguez — 6 comentarios',
+    content: 'Elon Musk ha comentado la posibilidad de crear un nuevo servicio de correo electronico llamado Xmail. "Tendra un diseño mas simple que Gmail".'
+  },
+  {
+    title: 'Se confirma la participacion de Ucrania en el asesinato de un General ruso en Moscu.',
+    image: require('../recursos/trivia_ucrania.jpeg'),
+    categoria: 'Geopolitica',
+    detalles: '6 horas — Jorge Casas — 1 comentarios',
+    content: 'Un general ruso fue asesinado en Moscu este martes en plena calle mediante el uso de un artefacto explosivo. El perpetrador ha sido detenido, y ha confirmado la involucracion del gobierno de Ucrania.'
+  },
+  {
+    title: 'El principal sospechoso del asesinato Ceo de United Healthcare ha sido transferido a prision federal.',
+    image: require('../recursos/trivia-luigi.jpg'),
+    categoria: 'Actualidad',
+    detalles: '5 horas — Guillermo Perez — 2 comentarios',
+    content: 'Luigi Mangione, principal sospechoso del asesinato del Ceo de United Healthcare, Brian Thompson, ha sido transferido a prision federal despues de hallar nuevas pruebas en su contra.'
+  },
+  {
+    title: 'Siria tiene un nuevo presidente.',
+    image: require('../recursos/trivia-siria.jpg'),
+    categoria: 'Geopolitica',
+    detalles: '5 horas — Guillermo Perez — 9 comentarios',
+    content: 'Tras el derrocamiento del gobierno de Bashar al-Assad, Siria ha anunciado la nombracion temporal de un nuevo presidente , el general Hafez al-Assad.'
   },
 ];
 
-function Trivia({ volver }) {
+function Trivia({ iraLogin,irAAnalisis, irAGuias, irASeries,volver }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState(null);
 
@@ -51,7 +79,11 @@ function Trivia({ volver }) {
           <div className="logo" />
           <nav id="cabecera">
             <div id="botones" className="botones">
-              <button onClick={volver}>Volver al Main</button>
+              <button onClick={volver}>Main</button>
+              <button onClick={irAGuias}>Guias y Trucos</button>
+              <button onClick={irAAnalisis}>Análisis</button> 
+              <button onClick={irASeries}>Series</button>
+              <button onClick={iraLogin} id="login">Login</button>
             </div>
             <h1 id="tituloPag">TRIVIA</h1>
           </nav>

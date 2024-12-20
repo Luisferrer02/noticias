@@ -3,7 +3,7 @@ import Modal from "./Modal";
 import PageFooter from "./pageFooter";
 import "./general.css";
 
-function Series({ volver }) {
+function Series({ iraLogin,irAAnalisis, irAGuias,irATrivia,volver  }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState(null);
 
@@ -51,7 +51,11 @@ function Series({ volver }) {
           <div className="logo" />
           <nav id="cabecera">
             <div className="botones">
-              <button onClick={volver}>Volver al Main</button>
+            <button onClick={volver}>Main</button>
+              <button onClick={irAGuias}>Guias y Trucos</button>
+              <button onClick={irAAnalisis}>Análisis</button> 
+              <button onClick={irATrivia}>Trivia</button>
+              <button onClick={iraLogin} id="login">Login</button>
             </div>
             <h1 id="tituloPag">SERIES</h1>
           </nav>

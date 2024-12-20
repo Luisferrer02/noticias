@@ -45,26 +45,45 @@ button:hover,
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: rgba(185, 184, 117, 0.8);
+  background-color: rgba(185, 184, 117, 1);
   gap: 10px;
   width: 100%;
-  padding: 10px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
 .botones button {
-  background-color: #ff0000;
+  background-color: rgba(185, 184, 117, 1);
   border: none;
   color: white;
+  font-weight:bold;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 22px;
   cursor: pointer;
   box-sizing: border-box;
+  padding:20px;
 }
 
 .botones button:hover {
-  background-color: #950000;
+  background-color: rgb(185, 184, 117, 0.8);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ligera */
 }
+
+#login {  
+  border-left: 3px solid rgba(255, 255, 255, .15);
+  color: white;
+  width:200px;
+  font-weight:bold;
+  font-size: 22px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  padding:20px;
+  margin-left:30px;
+  
+}
+
+
 
 /* Footer Section */
 #footer-area {
@@ -115,13 +134,13 @@ button:hover,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgba(185, 184, 117, 0.8);
-  margin-top: 14px;
+  background-color: rgba(185, 184, 117, 1);
+  margin: 14px 0px 0px 0px ;
   border: 2px solid #61dafb;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  height: 30px;
+  height: auto;
 }
 
 /* Featured News Section */
@@ -275,4 +294,95 @@ button:hover,
 #main-noticiaReciente8:hover,
 #main-noticiaReciente9:hover {
   transform: scale(0.8);  /* Aumenta ligeramente el tamaño de la tarjeta */
+}
+#login-page {
+  background-image: url('./recursos/loginfondo.jpg'); /* Aquí pones la ruta a tu imagen */
+  background-size: cover; /* La imagen cubrirá toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  background-color: #eed47b; 
+  width: 500px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  height:600px;
+}
+
+.login-container h2 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-container label {
+  text-align: left;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #DAA520;
+}
+
+#loginboton {
+  background-color: #4B0082; /* Púrpura oscuro */
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#loginboton:hover {
+  background-color: #6A0DAD; /* Tonalidad más clara de púrpura */
+}
+
+.login-container .external-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.external-login img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.login-container p {
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+.login-container a {
+  color: #4B0082;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
 }

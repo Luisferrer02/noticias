@@ -1,6 +1,6 @@
 import PageFooter from './pageFooter';
 
-function Main({ irAAnalisis, irAGuias, irATrivia, irASeries }) {
+function Main({ irAAnalisis, irAGuias, irATrivia, irASeries,iraLogin }) {
   return (
     <>
       {/* COPIAD ESTO PARA TENER LA MISMA CABECERA */}
@@ -12,10 +12,11 @@ function Main({ irAAnalisis, irAGuias, irATrivia, irASeries }) {
         </div>
         <nav id="main-paginas">
           <div id="main-botones" className="botones">
-            <button onClick={irAGuias}>Ir a Guias y Trucos</button>
-            <button onClick={irAAnalisis}>Ir a Análisis</button>
-            <button onClick={irATrivia}>Ir a Trivia</button>
-            <button onClick={irASeries}>Ir a Series</button>
+            <button onClick={irAGuias}>Guias y Trucos</button>
+            <button onClick={irAAnalisis}>Análisis</button>
+            <button onClick={irATrivia}>Trivia</button>
+            <button onClick={irASeries}>Series</button>
+            <button onClick={iraLogin} id="login">Login</button>
           </div>
         </nav>
       </header>

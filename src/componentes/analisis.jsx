@@ -3,7 +3,7 @@ import Modal from "./Modal";
 import PageFooter from "./pageFooter";
 import './general.css';
 
-function Analisis({ volver }) {
+function Analisis({  volver,irAGuias, irATrivia, irASeries,iraLogin }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState(null);
 
@@ -66,7 +66,11 @@ function Analisis({ volver }) {
           <div className="logo" />
           <nav id="cabecera">
             <div className="botones">
-              <button onClick={volver}>Volver al Main</button>
+              <button onClick={volver}>Main</button>
+              <button onClick={irAGuias}>Guias y Trucos</button>
+              <button onClick={irATrivia}>Trivia</button> 
+              <button onClick={irASeries}>Series</button>
+              <button onClick={iraLogin} id="login">Login</button>
             </div>
             <h1 id="tituloPag"> ANALISIS </h1>
           </nav>
